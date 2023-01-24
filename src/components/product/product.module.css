@@ -3,4 +3,30 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 7px;
+
+}
+.productButtonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+
+.icon {
+    font-size: 25px;
+    color: rgba(51, 51, 58, 0.397);
+    cursor: pointer;
+}
+.iconEdit {
+    color: rgb(76, 76, 194);
+}
+.iconDelete  {
+    color: red;
+}
+.iconShopped {
+    color: green;
 }
