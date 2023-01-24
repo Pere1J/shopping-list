@@ -9,7 +9,11 @@ export const Product = ({ product, buyById, editProductById, deleteById }) => {
     isBought: false,    
 };  */
   return (
-    <li key={product.id} className={styles.product}>
+    <li
+      className={`${styles.product} ${
+        product.isBought ? styles.productBought : ""
+      }`}
+    >
       {product.productName}
       <div className={styles.productButtonsContainer}>
         <MdAddShoppingCart

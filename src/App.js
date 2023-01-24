@@ -1,15 +1,11 @@
 import "./App.css";
-import { Product } from "./components/product";
+import { ProductsList } from "./components/productslist";
 
 function App() {
   return (
-    <Product
-      product={{
-        id: "1",
-        productName: "comprar algo",
-        isBought: false,
-      }}
-    />
+    <div>
+      <ProductsList />
+    </div>
   );
 }
 

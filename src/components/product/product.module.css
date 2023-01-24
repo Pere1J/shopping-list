@@ -8,6 +8,9 @@
     border-radius: 7px;
 
 }
+.productBought {
+    text-decoration: line-through;
+}
 .productButtonsContainer {
     display: flex;
     align-items: center;
