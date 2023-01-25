@@ -37,10 +37,19 @@ export const ProductsList = () => {
       setProductsList([...productsList]);
     }
   };
+  const deleteById=(id)=>{
+    const filteredProduct = productsList.filter((product) => id == product.id);
+    if (filteredProduct.length > 1) {
+      throw new Error("¡Parámetros repetidos!");
+    }
+    if (filteredProduct.length == 1) {
+      setProductsList(productsList.filter((product) => id != product.id)); 
+    }
+  }
   return (
     <ul>
       {productsList.map((product) => {
-        return <Product product={product} key={product.id} buyById={buyById} />;
+        return <Product product={product} key={product.id} buyById={buyById} deleteById={deleteById} />;
       })}
     </ul>
   );
