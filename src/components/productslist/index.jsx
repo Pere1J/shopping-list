@@ -47,6 +47,16 @@ export const ProductsList = () => {
       setProductsList(productsList.filter((product) => id != product.id));
     }
   };
+  const editById = (id) => {
+    const filteredProduct = productsList.filter((product) => id == product.id);
+    if (filteredProduct.length > 1) {
+      throw new Error("¡Parámetros repetidos!");
+    }
+    if (filteredProduct.length == 1) {
+      //TODO resolver como pasar el producto al input
+    }
+  };
+
   const addProduct = (givenProductName) => {
     const newProduct = {
       id: uuid(),
@@ -66,6 +76,7 @@ export const ProductsList = () => {
               key={product.id}
               buyById={buyById}
               deleteById={deleteById}
+              editById={editById}
             />
           );
         })}

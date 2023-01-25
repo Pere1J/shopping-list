@@ -2,7 +2,7 @@ import styles from "./product.module.css";
 import React from "react";
 import { MdAddShoppingCart, MdDeleteForever, MdModeEdit } from "react-icons/md";
 
-export const Product = ({ product, buyById, editProductById, deleteById }) => {
+export const Product = ({ product, buyById, editById, deleteById }) => {
   /*  {
     id:'', 
     productName:'',
@@ -22,7 +22,7 @@ export const Product = ({ product, buyById, editProductById, deleteById }) => {
         />
         <MdModeEdit
           className={`${styles.icon} ${styles.iconEdit}`}
-          onClick={() => editProductById(product.id)}
+          onClick={() => editById(product.id)} //añadir clase disabled con cursor: no-drop
         />
         <MdDeleteForever
           className={`${styles.icon} ${styles.iconDelete}`}

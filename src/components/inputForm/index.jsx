@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export const InputForm = ({ addProduct }) => {
   const [givenProductName, setGivenProductName] = useState("");
+  const [inputMode, setInputMode] = useState("add");
   const inputChangeHandler = (e) => {
     setGivenProductName(e.target.value);
   };
@@ -15,10 +16,12 @@ export const InputForm = ({ addProduct }) => {
       />
       <button
         onClick={() => {
-          addProduct(givenProductName);
+          if (inputMode == "add") {
+            addProduct(givenProductName);
+          }
         }}
       >
-        Añadir
+        {inputMode == "add" ? "Añadir" : "Editar"}
       </button>
     </div>
   );
