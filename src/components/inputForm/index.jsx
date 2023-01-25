@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-export const InputForm = () => {
-  const [input, setInput] = useState("");
+export const InputForm = ({ addProduct }) => {
+  const [givenProductName, setGivenProductName] = useState("");
   const inputChangeHandler = (e) => {
-    setInput(e.target.value);
+    setGivenProductName(e.target.value);
   };
+
   return (
     <div>
       <input
@@ -12,7 +13,13 @@ export const InputForm = () => {
         placeholder="Introduce productos a añadir"
         onChange={inputChangeHandler}
       />
-      <button onClick={null}>Añadir</button>
+      <button
+        onClick={() => {
+          addProduct(givenProductName);
+        }}
+      >
+        Añadir
+      </button>
     </div>
   );
 };

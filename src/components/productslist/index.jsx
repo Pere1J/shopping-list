@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
+import { InputForm } from "../inputForm";
 import { Product } from "../product";
 
 const dataBase = [
@@ -37,20 +38,38 @@ export const ProductsList = () => {
       setProductsList([...productsList]);
     }
   };
-  const deleteById=(id)=>{
+  const deleteById = (id) => {
     const filteredProduct = productsList.filter((product) => id == product.id);
     if (filteredProduct.length > 1) {
       throw new Error("¡Parámetros repetidos!");
     }
     if (filteredProduct.length == 1) {
-      setProductsList(productsList.filter((product) => id != product.id)); 
+      setProductsList(productsList.filter((product) => id != product.id));
     }
-  }
+  };
+  const addProduct = (givenProductName) => {
+    const newProduct = {
+      id: uuid(),
+      productName: givenProductName,
+      isBought: false,
+    };
+    setProductsList([...productsList, newProduct]);
+  };
   return (
-    <ul>
-      {productsList.map((product) => {
-        return <Product product={product} key={product.id} buyById={buyById} deleteById={deleteById} />;
-      })}
-    </ul>
+    <div>
+      <InputForm addProduct={addProduct} />
+      <ul>
+        {productsList.map((product) => {
+          return (
+            <Product
+              product={product}
+              key={product.id}
+              buyById={buyById}
+              deleteById={deleteById}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 };
