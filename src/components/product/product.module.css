@@ -4,8 +4,10 @@
   justify-content: space-between;
   width: 80%;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: var(--taupe-gray);
   border-radius: 7px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px;
 }
 .productBought {
   text-decoration: line-through;
@@ -23,7 +25,8 @@
   cursor: pointer;
 }
 .iconEdit {
-  color: rgb(76, 76, 194);
+  color: rgba(76, 76, 194, 0.39);
+  cursor: no-drop;
 }
 .iconDelete {
   color: red;

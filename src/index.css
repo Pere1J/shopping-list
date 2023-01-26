@@ -1,17 +1,21 @@
 /* Paleta Colores*/
 :root
-{--straw: #dbd56eff;
+{--straw: rgb(238, 235, 170);
 --asparagus: #88ab75ff;
 --middle-blue: #7dcadeff;
---taupe-gray: #7d7c84ff;}
+--taupe-gray: rgba(125, 124, 132, 0.349);}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 body {
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--straw);
 }
 
 code {

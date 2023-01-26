@@ -1,3 +1,4 @@
+import styles from "./inputForm.module.css";
 import React, { useState } from "react";
 
 export const InputForm = ({ addProduct }) => {
@@ -8,13 +9,15 @@ export const InputForm = ({ addProduct }) => {
   };
 
   return (
-    <div>
+    <div className={styles.formContainer}>
       <input
+        className={styles.inputForm}
         type="text"
         placeholder="Introduce productos a añadir"
         onChange={inputChangeHandler}
       />
       <button
+        className={styles.addButton}
         onClick={() => {
           if (inputMode == "add") {
             addProduct(givenProductName);

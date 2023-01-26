@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { InputForm } from "../inputForm";
 import { Product } from "../product";
+import styles from "./productlist.module.css";
 
 const dataBase = [
   {
@@ -68,19 +69,21 @@ export const ProductsList = () => {
   return (
     <div>
       <InputForm addProduct={addProduct} />
-      <ul>
-        {productsList.map((product) => {
-          return (
-            <Product
-              product={product}
-              key={product.id}
-              buyById={buyById}
-              deleteById={deleteById}
-              editById={editById}
-            />
-          );
-        })}
-      </ul>
+      <div className={styles.ulContainer}>
+        <ul>
+          {productsList.map((product) => {
+            return (
+              <Product
+                product={product}
+                key={product.id}
+                buyById={buyById}
+                deleteById={deleteById}
+                editById={editById}
+              />
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };
