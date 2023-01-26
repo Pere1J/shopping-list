@@ -16,6 +16,7 @@ Debe permitir básicamente:
 
   3.- TECNOLOGIA
 
+link al proyecto github:
 https://github.com/Pere1J/shopping-list
 
 Planificación en Trello de las tareas de desarrollo:
@@ -25,6 +26,10 @@ Maquetación en Figma:
 https://www.figma.com/file/RloBeEf0yBv3Y6gS7eFalW/Shopping-List?node-id=0%3A1&t=FPyvGpQ9vchC5u7N-0
 
 Uso de Js y React para implementar las diferentes funcionalidades.
+-npm install
+-npm start
+-npx
+
 Uso de Css para dar estilo a los diferentes elemntos de la aplicación.
 
 Uso de Git y gitHub para el desarrollo en paralelo:
