@@ -16,6 +16,8 @@ Debe permitir básicamente:
 
   3.- TECNOLOGIA
 
+https://shopping-list-iota-three.vercel.app/
+
 link al proyecto github:
 https://github.com/Pere1J/shopping-list
 
