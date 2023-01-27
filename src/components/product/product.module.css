@@ -6,7 +6,7 @@
   padding: 1rem;
   background-color: var(--taupe-gray);
   border-radius: 7px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 25px;
 }
 .productBought {
@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 .iconEdit {
-  color: rgba(76, 76, 194, 0.39);
+  color: rgba(76, 76, 194, 0.388);
   cursor: no-drop;
 }
 .iconDelete {

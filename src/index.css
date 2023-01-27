@@ -1,17 +1,22 @@
-/* Paleta Colores*/
-:root
-{--straw: rgb(238, 235, 170);
---asparagus: #88ab75ff;
---middle-blue: #7dcadeff;
---taupe-gray: rgba(125, 124, 132, 0.349);}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+/* Paleta Colores*/
+:root {
+  --straw: rgb(238, 235, 170);
+  --asparagus: #88ab75;
+  --middle-blue: #7dcade;
+  --taupe-gray: rgba(125, 124, 132, 0.349);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 
 body {
-  
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,6 +24,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

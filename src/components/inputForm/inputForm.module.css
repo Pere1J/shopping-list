@@ -1,30 +1,46 @@
 .formContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--asparagus);
-    height: 100px;
-    gap: 5px;
-    
-
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--asparagus);
+  width: 100%;
+  gap: 5px;
+  z-index: 1;
+  min-height: 7rem;
+  padding-top: 0.5rem;
 }
 .inputForm {
-    width: 300px;
-    height: 30px;
-    border-radius: 8px;
-    border: 0px;
+  width: 300px;
+  height: 30px;
+  border-radius: 8px;
+  border: 0px;
+  max-width: 350px;
 }
 
 .addButton {
-    
-    height: 32px;
-    border-radius: 8px;
-    border: 1px;
-    background-color: var(--middle-blue);
-    color: rgb(30, 31, 39);
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    
+  height: 32px;
+  border-radius: 8px;
+  border: 1px;
+  background-color: var(--middle-blue);
+  color: rgb(30, 31, 39);
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
 
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0.5rem 0.1rem;
 }

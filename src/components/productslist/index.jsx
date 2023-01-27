@@ -58,19 +58,21 @@ export const ProductsList = () => {
     }
   };
 
-  const addProduct = (givenProductName) => {
+  const addProduct = (givenProductName, setGivenProductName) => {
+    if (givenProductName === "") return;
     const newProduct = {
       id: uuid(),
       productName: givenProductName,
       isBought: false,
     };
     setProductsList([...productsList, newProduct]);
+    setGivenProductName("");
   };
   return (
     <div>
       <InputForm addProduct={addProduct} />
       <div className={styles.ulContainer}>
-        <ul>
+        <ul className={styles.productList}>
           {productsList.map((product) => {
             return (
               <Product
